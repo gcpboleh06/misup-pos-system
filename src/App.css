@@ -107,9 +107,22 @@
   /* Adjust the margin-top value as needed */
   display: flex;
   justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  /* Align buttons to the bottom */
 }
 
 .preset-buttons button {
   margin: 0 5px;
   /* Adjust the margin-left and margin-right values as needed */
+}
+
+
+.preset-buttons .btn {
+  flex: 1 1 auto;
+  /* Let buttons grow to fill the available space */
+  margin-bottom: 5px;
+  /* Add margin between buttons */
 }
